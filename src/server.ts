@@ -87,7 +87,7 @@ export class OnyxMcpServer {
     this.server.setRequestHandler(ListToolsRequestSchema, async () => {
       return {
         tools: [
-          toolSchemas.search_onyx,
+          // toolSchemas.search_onyx,  // Disabled: API key lacks Onyx admin access
           toolSchemas.chat_with_onyx,
         ],
       };
